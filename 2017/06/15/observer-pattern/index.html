@@ -6,18 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//lichongjiu.com">
-  <title>Tag: 生活 | 九先生的博客</title>
+  <title>和观察者模式约谈一次 | 九先生的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="就职于不知名企业。擅长各项zhuangB技能，深入研究移动端zhuangB与前端zhuangB。非专业视觉程序猿。此为博客一枚。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="九先生的博客">
-<meta property="og:url" content="//lichongjiu.com/tags/生活/index.html">
+  <meta name="description" content="开篇先扯话说现在的年轻人，很多人每天最困难的的问题是下一顿什么，在哪里吃。作为一个苦逼上班族，食堂饭菜实在是吃腻了。于是乎，今天和一个同事上午不约而同叫了同一家外卖，到了中午吃饭的时间，快递小哥准时送来，我难得吃到了一点跟平常不一样的口味。我表示现在还在心疼自己的钱包…  进入正题观察者模式概述观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化">
+<meta name="keywords" content="设计模式,观察者模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="和观察者模式约谈一次">
+<meta property="og:url" content="//lichongjiu.com/2017/06/15/observer-pattern/index.html">
 <meta property="og:site_name" content="九先生的博客">
-<meta property="og:description" content="就职于不知名企业。擅长各项zhuangB技能，深入研究移动端zhuangB与前端zhuangB。非专业视觉程序猿。此为博客一枚。">
+<meta property="og:description" content="开篇先扯话说现在的年轻人，很多人每天最困难的的问题是下一顿什么，在哪里吃。作为一个苦逼上班族，食堂饭菜实在是吃腻了。于是乎，今天和一个同事上午不约而同叫了同一家外卖，到了中午吃饭的时间，快递小哥准时送来，我难得吃到了一点跟平常不一样的口味。我表示现在还在心疼自己的钱包…  进入正题观察者模式概述观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化">
+<meta property="og:image" content="http://img.smzy.com/imges/2017/0504/20170504091636795.jpg">
+<meta property="og:image" content="http://img3.duitang.com/uploads/item/201602/11/20160211211815_uTdZJ.jpeg">
+<meta property="og:updated_time" content="2017-06-14T18:03:15.287Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="九先生的博客">
-<meta name="twitter:description" content="就职于不知名企业。擅长各项zhuangB技能，深入研究移动端zhuangB与前端zhuangB。非专业视觉程序猿。此为博客一枚。">
+<meta name="twitter:title" content="和观察者模式约谈一次">
+<meta name="twitter:description" content="开篇先扯话说现在的年轻人，很多人每天最困难的的问题是下一顿什么，在哪里吃。作为一个苦逼上班族，食堂饭菜实在是吃腻了。于是乎，今天和一个同事上午不约而同叫了同一家外卖，到了中午吃饭的时间，快递小哥准时送来，我难得吃到了一点跟平常不一样的口味。我表示现在还在心疼自己的钱包…  进入正题观察者模式概述观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化">
+<meta name="twitter:image" content="http://img.smzy.com/imges/2017/0504/20170504091636795.jpg">
   
     <link rel="alternative" href="/atom.xml" title="九先生的博客" type="application/atom+xml">
   
@@ -153,124 +157,259 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-observer-pattern" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/14/wangyi-music/" class="archive-article-date">
-  	<time datetime="2017-06-14T12:58:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/14/wangyi-music/">你的故事待我别样演绎</a>
+    <h1 class="article-title" itemprop="name">
+      和观察者模式约谈一次
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/06/15/observer-pattern/" class="archive-article-date">
+  	<time datetime="2017-06-14T16:22:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="开篇先扯"><a href="#开篇先扯" class="headerlink" title="开篇先扯"></a>开篇先扯</h1><p>话说现在的年轻人，很多人每天最困难的的问题是下一顿什么，在哪里吃。作为一个苦逼上班族，食堂饭菜实在是吃腻了。于是乎，今天和一个同事上午不约而同叫了同一家外卖，到了中午吃饭的时间，快递小哥准时送来，我难得吃到了一点跟平常不一样的口味。我表示现在还在心疼自己的钱包…</p>
+<p><img src="http://img.smzy.com/imges/2017/0504/20170504091636795.jpg" alt=""></p>
+<h1 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h1><h3 id="观察者模式概述"><a href="#观察者模式概述" class="headerlink" title="观察者模式概述"></a>观察者模式概述</h3><p>观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观察者对象，使它们能够自动更新自己。<a id="more"></a>好吧，这个概念这没什么意思，网上一搜一大把，都大同小异，不多说了。</p>
+<h3 id="观察者模式的模型"><a href="#观察者模式的模型" class="headerlink" title="观察者模式的模型"></a>观察者模式的模型</h3><ul>
+<li>抽象主题(Subject)角色：抽象主题角色把所有对观察者对象的引用保存在一个聚集（比如ArrayList对象）里，每个主题都可以有任何数量的观察者。抽象主题提供一个接口，可以增加和删除观察者对象，抽象主题角色又叫做抽象被观察者(Observable)角色。    </li>
+<li>具体主题(ConcreteSubject)角色：将有关状态存入具体观察者对象；在具体主题的内部状态改变时，给所有登记过的观察者发出通知。具体主题角色又叫做具体被观察者(Concrete Observable)角色。    </li>
+<li>抽象观察者(Observer)角色：为所有的具体观察者定义一个接口，在得到主题的通知时更新自己，这个接口叫做更新接口。    </li>
+<li>具体观察者(ConcreteObserver)角色：存储与主题的状态自恰的状态。具体观察者角色实现抽象观察者角色所要求的更新接口，以便使本身的状态与主题的状态 像协调。如果需要，具体观察者角色可以保持一个指向具体主题对象的引用。      </li>
+</ul>
+<p>抽象主题和抽相观察者的一般性代码如下：  </p>
+<p><pre>package demo;<br>import java.util.ArrayList;<br>import java.util.List;<br>public abstract class Subject {<br>    private List<observer> list = new ArrayList&lt;&gt;();<br>    public void addObserver(Observer observer){<br>        list.add(observer);<br>    }<br>    public void removeObserver(Observer observer){<br>        list.remove(observer);<br>    }<br>    public void notifyObserver(){<br>        for(Observer o : list){<br>            o.update();<br>        }<br>    }<br>}</observer></pre></p>
+<p><pre>package demo;<br>public abstract class Observer {<br>    abstract void update();<br>}</pre></p>
+<h3 id="用例子说明问题"><a href="#用例子说明问题" class="headerlink" title="用例子说明问题"></a>用例子说明问题</h3><p>就用叫外卖的例子来说吧，假设某快餐店，供应午餐，有需要的同事在上午订过餐之后，到12点的时候，快递小哥会给每个订过餐的人送来一份蛋炒饭，不同办公楼（公司办公楼分A栋、B栋、C栋…）的同事分别从不同的办公楼下来取餐。用下面的代码实现这个场景：</p>
+<p>首先定义抽象主题类：</p>
+<p><pre>package demo;<br>import java.util.ArrayList;<br>import java.util.List;<br>public abstract class Subject {<br>    private List<observer> list = new ArrayList&lt;&gt;();<br>    public void addObserver(Observer observer){<br>        list.add(observer);<br>    }<br>    public void removeObserver(Observer observer){<br>        list.remove(observer);<br>    }<br>    public void notifyObserver(String food){<br>        for(Observer o : list){<br>            o.update(food);<br>        }<br>    }<br>}</observer></pre><br>定义抽象观察者类：</p>
+<p><pre>package demo;<br>public abstract class Observer {<br>    abstract void update(String food);<br>}</pre><br>定义具体的主题类，快餐店：</p>
+<p><pre>package demo;<br>public class Neshery extends Subject {<br>    private String food;<br>    public void sendFood(String food){<br>        this.food=food;<br>        notifyObserver(food);<br>    }<br>}</pre><br>定义具体观察者类，A栋同事：</p>
+<p><pre>package demo;<br>public class A extends Observer{<br>    @Override<br>    void update(String food) {<br>        System.out.println(“A栋楼的同事走楼梯下来取走了”+ food);<br>    }<br>}</pre><br>定义具体观察者类，B栋同事：</p>
+<p><pre>package demo;<br>public class B extends Observer{<br>    @Override<br>    void update(String food) {<br>        System.out.println(“B栋楼的同事乘电梯下来取走了”+ food);<br>    }<br>}</pre><br>测试类：</p>
+<p><pre>package demo;<br>public class Test {<br>    public static void main(String[] args) {<br>        Neshery neshery = new Neshery();<br>        Observer o1 = new A();<br>        Observer o2 = new B();<br>        neshery.addObserver(o1);<br>        neshery.addObserver(o2);<br>        neshery.sendFood(“蛋炒饭”);<br>    }<br>}</pre><br>运行 Test 类，结果如下：</p>
+<p><pre>A栋楼的同事走楼梯下来取走了蛋炒饭<br>B栋楼的同事乘电梯下来取走了蛋炒饭</pre><br>整个过程就是这样，很好理解，快餐店把订了餐的同事，添加到一个集合，待我把食物送到之后，通知大家，即遍历这个集合，通知每个订餐的人下楼来取餐。至于每栋楼的同事怎么来取餐，这个由每栋楼的人根据实际情况自己去实现。</p>
+<p><strong>注意这里面参数的传递，传递的是食物的名字蛋炒饭，我现在蛋炒饭送来了，大家自己来取。</strong><br>第二天，A栋楼的同事觉得自己这么高下楼梯来取餐太累了，决定早上买面包带上去，第二天，只有B栋楼的同事订餐了，第二天快餐店的食物是宫保鸡丁。修改 Test 类代码如下：</p>
+<p><pre>package demo;<br>public class Test {<br>    public static void main(String[] args) {<br>        Neshery neshery = new Neshery();<br>        Observer o1 = new A();<br>        Observer o2 = new B();<br>        neshery.addObserver(o1);<br>        neshery.addObserver(o2);<br>        neshery.removeObserver(o1);<br>        neshery.sendFood(“宫保鸡丁”);<br>    }<br>}</pre><br>运行结果如下：</p>
+<p><pre>B栋楼的同事乘电梯下来取走了宫保鸡丁</pre><br>这也很好理解，这种业务场景其实很常见，比如，你关注了某个公众号，你被添加到该公众号关注者集合中，它每天推送文章，你就能收到。</p>
+<h3 id="观察者模式中的推模式"><a href="#观察者模式中的推模式" class="headerlink" title="观察者模式中的推模式"></a>观察者模式中的推模式</h3><p>其实上面介绍的这种观察者模式就叫推模式。<br>现在考虑另一种场景，每个人的口味不一样，订餐的食物是不同的，假设现在 A 栋楼的同事订的蛋炒饭，B栋楼的同事订的是宫保鸡丁。还能用上面的推模式解决问题吗？废话，当然能。<br><img src="http://img3.duitang.com/uploads/item/201602/11/20160211211815_uTdZJ.jpeg" alt=""><br>我们只需要修改抽象主题类的 <code>void notifyObserver(String food)</code>  和抽象观察者类的 <code>void update(String food)</code> 这两个方法的参数就可以了，我可以带上两个参数。修改为下面的代码：</p>
+<p><pre>package demo;<br>import java.util.ArrayList;<br>import java.util.List;<br>public abstract class Subject {<br>    private List<observer> list = new ArrayList&lt;&gt;();<br>    public void addObserver(Observer observer){<br>        list.add(observer);<br>    }<br>    public void removeObserver(Observer observer){<br>        list.remove(observer);<br>    }<br>    public void notifyObserver(String aFood,String bFood){<br>        for(Observer o : list){<br>            o.update(aFood, bFood);<br>        }<br>    }<br>}</observer></pre></p>
+<p><pre>package demo;<br>public abstract class Observer {<br>    abstract void update(String aFood, String bFood);<br>}</pre></p>
+<p><pre>package demo;<br>public class Neshery extends Subject {<br>    private String aFood;<br>    private String bFood;<br>    public void sendFood(String aFood, String bFood){<br>        this.aFood = aFood;<br>        this.bFood = bFood;<br>        notifyObserver(aFood, bFood);<br>    }<br>}</pre></p>
+<p><pre>package demo;<br>public class A extends Observer{<br>    @Override<br>    void update(String aFood, String bFood) {<br>        System.out.println(“A栋楼的同事走楼梯下来取走了”+ aFood);<br>    }<br>}</pre></p>
+<p><pre>package demo;<br>public class B extends Observer{<br>    @Override<br>    void update(String aFood, String bFood) {<br>        System.out.println(“B栋楼的同事乘电梯下来取走了”+ bFood);<br>    }<br>}</pre></p>
+<p><pre>package demo;<br>public class Test {<br>    public static void main(String[] args) {<br>        Neshery neshery = new Neshery();<br>        Observer o1 = new A();<br>        Observer o2 = new B();<br>        neshery.addObserver(o1);<br>        neshery.addObserver(o2);<br>        neshery.sendFood(“蛋炒饭”,”宫保鸡丁”);<br>    }<br>}</pre><br>再次运行结果如下：</p>
+<p><pre>A栋楼的同事走楼梯下来取走了蛋炒饭<br>B栋楼的同事乘电梯下来取走了宫保鸡丁</pre><br>这样做确实实现了我们的需求，但是对于A栋楼订餐的人和B栋楼订餐的人来说，传来了多余的参数，感觉就是,我把两份食物都送来了，分别放在了连个储物柜里，把两个储物柜的密码（相当于aFood 和 bFood 的引用）都发给A栋楼和B栋楼订餐的人，你们自己去选，甚至一不小心有选错的可能。<br>很明显，这样并不好。假设有20个人或者更多的人订餐，那怎么办，你还要通过继续增加参数，来实现业务逻辑吗？或者，你可能并不需要传这么多参数，把所有参数放到一个数组或者集合里，传一个数组或者集合过来，这样代码是好看很多了，但是实际上还是很糟，我给每个人分20条短信发20个存物柜密码，变成给每个人发一条包含20个储物柜的密码。相信不论是送餐小哥还是取餐的人都会崩溃。这就可以用到观察者模式的另一种模式了——拉模式。</p>
+<h3 id="观察者模式中的推模式-1"><a href="#观察者模式中的推模式-1" class="headerlink" title="观察者模式中的推模式"></a>观察者模式中的推模式</h3><p>拉模式又是怎样的呢？简单点说，就是抽象主题类并不给每个订阅类传相应的内容，而只是通知它们更新了，有订阅者自己去获取更新的内容，有一种“拉取”的意思。具体实现看代码：</p>
+<p><pre>package demo;<br>import java.util.ArrayList;<br>import java.util.List;<br>public abstract class Subject {<br>    private List<observer> list = new ArrayList&lt;&gt;();<br>    public void addObserver(Observer observer){<br>        list.add(observer);<br>    }<br>    public void removeObserver(Observer observer){<br>        list.remove(observer);<br>    }<br>    public void notifyObserver(){<br>        for(Observer o : list){<br>            o.update(this);<br>        }<br>    }<br>}</observer></pre></p>
+<p><pre>package demo;<br>public abstract class Observer {<br>    abstract void update(Subject sub);<br>}</pre></p>
+<p><pre>package demo;<br>public class Neshery extends Subject {<br>    private String aFood;<br>    private String bFood;<br>    public String getAFood(){<br>        return aFood;<br>    }<br>    public String getBFood(){<br>        return bFood;<br>    }<br>    public void sendFood(String aFood, String bFood){<br>        this.aFood = aFood;<br>        this.bFood = bFood;<br>        notifyObserver();<br>    }<br>}</pre></p>
+<p><pre>package demo;<br>public class A extends Observer{<br>    @Override<br>    void update(Subject sub) {<br>        if(sub instanceof Neshery){<br>            System.out.println(“A栋楼的同事走楼梯下来取走了”+ ((Neshery)sub).getAFood());<br>        }<br>    }<br>}</pre></p>
+<p><pre>package demo;<br>public class B extends Observer{<br>    @Override<br>    void update(Subject sub) {<br>        if(sub instanceof Neshery){<br>            System.out.println(“A栋楼的同事走楼梯下来取走了”+ ((Neshery)sub).getBFood());<br>        }<br>    }<br>}</pre></p>
+<p><pre>package demo;<br>public class Test {<br>    public static void main(String[] args) {<br>        Neshery neshery = new Neshery();<br>        Observer o1 = new A();<br>        Observer o2 = new B();<br>        neshery.addObserver(o1);<br>        neshery.addObserver(o2);<br>        neshery.sendFood(“蛋炒饭”,”宫保鸡丁”);<br>    }<br>}</pre><br>运行结果没有变化，如下：</p>
+<p><pre>A栋楼的同事走楼梯下来取走了蛋炒饭<br>B栋楼的同事乘电梯下来取走了宫保鸡丁</pre><br>可以看到，现在抽象主题类中，notifyObserver 方法中把 this 通过 update 方法传给了每个订阅者类对象，并没有传具体更新的内容了。这回好了，快餐做好了，现在不送了，快递小哥给每个订餐的人发一个快餐店地址，大家自己根据地址来取吧。这就是观察者模式中的拉模式。</p>
+<h1 id="最后再扯一点"><a href="#最后再扯一点" class="headerlink" title="最后再扯一点"></a>最后再扯一点</h1><p>两种模式的比较:    </p>
+<ul>
+<li>推模型是假定主题对象知道观察者需要的数据；而拉模型是主题对象不知道观察者具体需要什么数据，没有办法的情况下，干脆把自身传递给观察者，让观察者自己去按需要取值。    </li>
+<li>拉模型可能会使得观察者对象难以复用，因为观察者的update()方法是按需要定义的参数，可能无法兼顾没有考虑到的使用情况。这就意味着出现新情况的时候，就可能提供新的update()方法，或者是干脆重新实现观察者；而拉模型就不会造成这样的情况，因为拉模型下，update()方法的参数是主题对象本身，这基本上是主题对象能传递的最大数据集合了，基本上可以适应各种情况的需要。</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixinpay.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/生活/" class="article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/12/typhoon/" class="archive-article-date">
-  	<time datetime="2017-06-12T15:32:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/12/typhoon/">台风来了</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">观察者模式</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/生活杂记/" class="article-tag-list-link color5">生活杂记</a>
+        			<a href="/categories/设计模式/" class="article-tag-list-link color5">设计模式</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://lichongjiu.com/2017/06/15/observer-pattern/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/06/14/wangyi-music/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">你的故事待我别样演绎</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="observer-pattern" data-title="和观察者模式约谈一次" data-url="//lichongjiu.com/2017/06/15/observer-pattern/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "//lichongjiu.com/2017/06/15/observer-pattern/", 
+    sourceId: "observer-pattern",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-    
+  
+  <div id="SOHUCS" sid="observer-pattern" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "true"; 
+var conf = "true"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -293,9 +432,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
