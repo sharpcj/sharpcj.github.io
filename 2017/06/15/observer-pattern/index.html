@@ -17,7 +17,7 @@
 <meta property="og:description" content="开篇先扯话说现在的年轻人，很多人每天最困难的的问题是下一顿吃什么，在哪里吃。作为一个苦逼上班族，食堂饭菜实在是吃腻了。于是乎，今天和一个同事上午不约而同叫了同一家外卖，到了中午吃饭的时间，快递小哥准时送来，收取了配送费5元，我表示现在还在心疼自己的钱包…  进入正题观察者模式概述观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观">
 <meta property="og:image" content="http://img.smzy.com/imges/2017/0504/20170504091636795.jpg">
 <meta property="og:image" content="http://img3.duitang.com/uploads/item/201602/11/20160211211815_uTdZJ.jpeg">
-<meta property="og:updated_time" content="2017-06-14T23:47:20.887Z">
+<meta property="og:updated_time" content="2017-06-17T07:37:13.388Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="和观察者模式来一次约谈">
 <meta name="twitter:description" content="开篇先扯话说现在的年轻人，很多人每天最困难的的问题是下一顿吃什么，在哪里吃。作为一个苦逼上班族，食堂饭菜实在是吃腻了。于是乎，今天和一个同事上午不约而同叫了同一家外卖，到了中午吃饭的时间，快递小哥准时送来，收取了配送费5元，我表示现在还在心疼自己的钱包…  进入正题观察者模式概述观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观">
@@ -209,7 +209,7 @@
 <p><pre>package demo;<br>public class B extends Observer{<br>    @Override<br>    void update(String aFood, String bFood) {<br>        System.out.println(“B栋楼的同事乘电梯下来取走了”+ bFood);<br>    }<br>}</pre></p>
 <p><pre>package demo;<br>public class Test {<br>    public static void main(String[] args) {<br>        Neshery neshery = new Neshery();<br>        Observer o1 = new A();<br>        Observer o2 = new B();<br>        neshery.addObserver(o1);<br>        neshery.addObserver(o2);<br>        neshery.sendFood(“蛋炒饭”,”宫保鸡丁”);<br>    }<br>}</pre><br>再次运行结果如下：</p>
 <p><pre>A栋楼的同事走楼梯下来取走了蛋炒饭<br>B栋楼的同事乘电梯下来取走了宫保鸡丁</pre><br>这样做确实实现了我们的需求，但是对于A栋楼订餐的人和B栋楼订餐的人来说，传来了多余的参数，感觉就是,我把两份食物都送来了，分别放在了连个储物柜里，把两个储物柜的密码（相当于aFood 和 bFood 的引用）都发给A栋楼和B栋楼订餐的人，你们自己去选，甚至一不小心有选错的可能。<br>很明显，这样并不好。假设有20个人或者更多的人订餐，那怎么办，你还要通过继续增加参数，来实现业务逻辑吗？或者，你可能并不需要传这么多参数，把所有参数放到一个数组或者集合里，传一个数组或者集合过来，这样代码是好看很多了，但是实际上还是很糟，我给每个人分20条短信发20个存物柜密码，变成给每个人发一条包含20个储物柜的密码。相信不论是送餐小哥还是取餐的人都会崩溃。这就可以用到观察者模式的另一种模式了——拉模式。</p>
-<h3 id="观察者模式中的推模式-1"><a href="#观察者模式中的推模式-1" class="headerlink" title="观察者模式中的推模式"></a>观察者模式中的推模式</h3><p>拉模式又是怎样的呢？简单点说，就是抽象主题类并不给每个订阅类传相应的内容，而只是通知它们更新了，有订阅者自己去获取更新的内容，有一种“拉取”的意思。具体实现看代码：</p>
+<h3 id="观察者模式中的拉模式"><a href="#观察者模式中的拉模式" class="headerlink" title="观察者模式中的拉模式"></a>观察者模式中的拉模式</h3><p>拉模式又是怎样的呢？简单点说，就是抽象主题类并不给每个订阅类传相应的内容，而只是通知它们更新了，有订阅者自己去获取更新的内容，有一种“拉取”的意思。具体实现看代码：</p>
 <p><pre>package demo;<br>import java.util.ArrayList;<br>import java.util.List;<br>public abstract class Subject {<br>    private List<observer> list = new ArrayList&lt;&gt;();<br>    public void addObserver(Observer observer){<br>        list.add(observer);<br>    }<br>    public void removeObserver(Observer observer){<br>        list.remove(observer);<br>    }<br>    public void notifyObserver(){<br>        for(Observer o : list){<br>            o.update(this);<br>        }<br>    }<br>}</observer></pre></p>
 <p><pre>package demo;<br>public abstract class Observer {<br>    abstract void update(Subject sub);<br>}</pre></p>
 <p><pre>package demo;<br>public class Neshery extends Subject {<br>    private String aFood;<br>    private String bFood;<br>    public String getAFood(){<br>        return aFood;<br>    }<br>    public String getBFood(){<br>        return bFood;<br>    }<br>    public void sendFood(String aFood, String bFood){<br>        this.aFood = aFood;<br>        this.bFood = bFood;<br>        notifyObserver();<br>    }<br>}</pre></p>
@@ -220,7 +220,7 @@
 <h1 id="最后再扯一点"><a href="#最后再扯一点" class="headerlink" title="最后再扯一点"></a>最后再扯一点</h1><p>两种模式的比较:    </p>
 <ul>
 <li>推模型是假定主题对象知道观察者需要的数据；而拉模型是主题对象不知道观察者具体需要什么数据，没有办法的情况下，干脆把自身传递给观察者，让观察者自己去按需要取值。    </li>
-<li>拉模型可能会使得观察者对象难以复用，因为观察者的update()方法是按需要定义的参数，可能无法兼顾没有考虑到的使用情况。这就意味着出现新情况的时候，就可能提供新的update()方法，或者是干脆重新实现观察者；而拉模型就不会造成这样的情况，因为拉模型下，update()方法的参数是主题对象本身，这基本上是主题对象能传递的最大数据集合了，基本上可以适应各种情况的需要。</li>
+<li>推模型可能会使得观察者对象难以复用，因为观察者的update()方法是按需要定义的参数，可能无法兼顾没有考虑到的使用情况。这就意味着出现新情况的时候，就可能提供新的update()方法，或者是干脆重新实现观察者；而拉模型就不会造成这样的情况，因为拉模型下，update()方法的参数是主题对象本身，这基本上是主题对象能传递的最大数据集合了，基本上可以适应各种情况的需要。</li>
 </ul>
 
       
@@ -350,6 +350,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/06/15/dream-music/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          自己的音乐播放器
+        
+      </div>
+    </a>
   
   
     <a href="/2017/06/14/wangyi-music/" id="article-nav-older" class="article-nav-link-wrap">
@@ -517,11 +526,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">观察者模式</a>
+                <a href="javascript:void(0)" class="js-tag color4">app</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -530,6 +535,14 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">日记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">观察者模式</a>
               </li>
             
             <div class="clearfix"></div>
