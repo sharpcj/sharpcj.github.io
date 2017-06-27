@@ -6,18 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//lichongjiu.com">
-  <title>Category: 生活杂记 | 九先生的博客</title>
+  <title>亲测可行，AndroidStudio 究竟如何配置gradle | 九先生的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="就职于不知名企业。擅长各项zhuangB技能，深入研究移动端zhuangB与前端zhuangB。非专业视觉程序猿。此为博客一枚。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="九先生的博客">
-<meta property="og:url" content="//lichongjiu.com/categories/生活杂记/index.html">
+  <meta name="description" content="一、你不想看到的 Gradle Build Running话说在天朝当程序员也是很不容易的，不管是查阅资料还是下载东西，很多时候你会发现自己上网姿势不对，当然对大多数程序员来说，这都不是事儿。这次重新安装了最新版的AndrodiStudio,按照国际惯例，第一次启动当然是按默认程序走一波 Hello World。可是，很有可能，你会看到你不想看到的如下界面：原因估计大家应该都知道，是你项目对应版本">
+<meta name="keywords" content="android,androidstudio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="亲测可行，AndroidStudio 究竟如何配置gradle">
+<meta property="og:url" content="//lichongjiu.com/2017/06/28/gradle-config/index.html">
 <meta property="og:site_name" content="九先生的博客">
-<meta property="og:description" content="就职于不知名企业。擅长各项zhuangB技能，深入研究移动端zhuangB与前端zhuangB。非专业视觉程序猿。此为博客一枚。">
+<meta property="og:description" content="一、你不想看到的 Gradle Build Running话说在天朝当程序员也是很不容易的，不管是查阅资料还是下载东西，很多时候你会发现自己上网姿势不对，当然对大多数程序员来说，这都不是事儿。这次重新安装了最新版的AndrodiStudio,按照国际惯例，第一次启动当然是按默认程序走一波 Hello World。可是，很有可能，你会看到你不想看到的如下界面：原因估计大家应该都知道，是你项目对应版本">
+<meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p1.jpg">
+<meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p3.jpg">
+<meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p2.jpg">
+<meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p4.jpg">
+<meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p5.jpg">
+<meta property="og:updated_time" content="2017-06-27T16:46:43.654Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="九先生的博客">
-<meta name="twitter:description" content="就职于不知名企业。擅长各项zhuangB技能，深入研究移动端zhuangB与前端zhuangB。非专业视觉程序猿。此为博客一枚。">
+<meta name="twitter:title" content="亲测可行，AndroidStudio 究竟如何配置gradle">
+<meta name="twitter:description" content="一、你不想看到的 Gradle Build Running话说在天朝当程序员也是很不容易的，不管是查阅资料还是下载东西，很多时候你会发现自己上网姿势不对，当然对大多数程序员来说，这都不是事儿。这次重新安装了最新版的AndrodiStudio,按照国际惯例，第一次启动当然是按默认程序走一波 Hello World。可是，很有可能，你会看到你不想看到的如下界面：原因估计大家应该都知道，是你项目对应版本">
+<meta name="twitter:image" content="//lichongjiu.com/assets/imgs/gradle_config/p1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="九先生的博客" type="application/atom+xml">
   
@@ -153,75 +160,218 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-gradle-config" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/12/typhoon/" class="archive-article-date">
-  	<time datetime="2017-06-12T15:32:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/12/typhoon/">台风来了</a>
+    <h1 class="article-title" itemprop="name">
+      亲测可行，AndroidStudio 究竟如何配置gradle
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/06/28/gradle-config/" class="archive-article-date">
+  	<time datetime="2017-06-27T16:22:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一、你不想看到的-Gradle-Build-Running"><a href="#一、你不想看到的-Gradle-Build-Running" class="headerlink" title="一、你不想看到的 Gradle Build Running"></a>一、你不想看到的 Gradle Build Running</h1><p>话说在天朝当程序员也是很不容易的，不管是查阅资料还是下载东西，很多时候你会发现自己上网姿势不对，当然对大多数程序员来说，这都不是事儿。这次重新安装了最新版的AndrodiStudio,按照国际惯例，第一次启动当然是按默认程序走一波 Hello World。可是，很有可能，你会看到你不想看到的如下界面：<br><img src="/assets/imgs/gradle_config/p1.jpg" alt=""><br>原因估计大家应该都知道，是你项目对应版本的 gradle 下载不下来造成的。在不改变上网环境的情况下，解决办法就是下载 gradle 到本地，然后做相应配置。下面主要说说怎么配置。</p>
+<h1 id="二、亲测可行的解决方案"><a href="#二、亲测可行的解决方案" class="headerlink" title="二、亲测可行的解决方案"></a>二、亲测可行的解决方案</h1><h3 id="2-1解决问题"><a href="#2-1解决问题" class="headerlink" title="2.1解决问题"></a>2.1解决问题</h3><p>打开项目中的 gradle-wrapper.properties 文件，如下：<br><img src="/assets/imgs/gradle_config/p3.jpg" alt=""><br>意思就是在 <code>GRADLE_USER_HOME/wrapper/dists/</code>下面去找对应的 gradle 文件，没有的话，就去<br>到最后一行<br><code>distributionUrl=https\://services.gradle.org/distributions/gradle-3.4.1-all.zip</code><br>中的地址下载，其中 gradle-3.4.1-all.zip 这个说明你当前工程配置的 gradle 的版本为 3.4.1。所以需要下载该版本的gradle，<br>你可以到这里下载：<br><a href="http://services.gradle.org/distributions/" target="_blank" rel="external">http://services.gradle.org/distributions/</a><br>网上有热心人士的共享：<br><a href="http://download.csdn.net/album/detail/2265" target="_blank" rel="external">gradle-x.x-all.zip各个版本的离线包集合</a><br>接下来打开 AndroidStudio 中 gradle 的设置界面，如下：<br><img src="/assets/imgs/gradle_config/p2.jpg" alt=""><br>可以看到，默认的 gradle 的目录是<code>C:/Users/SharpCJ/.gradle</code>，进入该目录<br><code>C:\Users\SharpCJ\.gradle\wrapper\dists\gradle-x.x-all\</code>，可以看到有一串看起来像乱码字符的文件夹，进入，删掉里面的 gradle-x.x-all.zip.lck 和 gradle-x.x-all.zip.part 文件，然后把前面下载下来的对应的 gradle-x.x-all.zip 文件放进去，<strong>不用解压</strong>,然后 Ctrl+F9,重新编译工程，则会自动解压。OK,问题解决了。</p>
+<h3 id="2-2-更改-gradle-版本"><a href="#2-2-更改-gradle-版本" class="headerlink" title="2.2 更改 gradle 版本"></a>2.2 更改 gradle 版本</h3><p>假设现在要自己改变 gradle 版本，同样的道理，改 gradle-wrapper.properties 文件中最后一行版本号，然后编译则会生成对应的乱码字符的文件夹，然后按上面的操作进行，<strong>注意不能手动新建文件夹</strong>。<br>但是有时候，你会发现，编译的时候仍然会报错，这时候，很有可能是你选择的 gradle 版本太低了。gradle的版本还需要和 gradle 插件的版本对应，提高 gradle 版本即可。        </p>
+<h1 id="三、gradle-和-gradle-插件的区别"><a href="#三、gradle-和-gradle-插件的区别" class="headerlink" title="三、gradle 和 gradle 插件的区别"></a>三、gradle 和 gradle 插件的区别</h1><p>我们知道，AndroidStudio 是基于 gradle 构建项目的，安装 gradle插件 才能使系统能支持运行 gradle。安装 AndroidStudio 后就已经帮我安装了 gradle插件．但 gradle插件是独立于Android Studio运行的,所以它的更新也是与 AndroidStudio 分开的。<br>打开工程的 build.gradle 文件，能看到如下界面：<br><img src="/assets/imgs/gradle_config/p4.jpg" alt=""><br>这个就是 gradle插件的版本号。下图展示了 gradle插件 和 gradle 之间的对应关系：<br><img src="/assets/imgs/gradle_config/p5.jpg" alt=""><br>因为 gradle 在不断更新，自然 gradle插件也需要不断更新版本才能提供对新版本gradle的支持，所以最好让你的Gradle和Gradle插件都更新到最新。<br>更新 gradle 插件的方法：<br>通过选择 File &gt; Project Structure &gt; Project 来指定Gradle版本，然后点击 Tools &gt; Android &gt; Sync Project with Gradle Files 去下载。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixinpay.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">android</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">androidstudio</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/生活杂记/" class="article-tag-list-link color5">生活杂记</a>
+        			<a href="/categories/Android/" class="article-tag-list-link color3">Android</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://lichongjiu.com/2017/06/28/gradle-config/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/06/18/my-first-father's-day/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">父爱无言</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="gradle-config" data-title="亲测可行，AndroidStudio 究竟如何配置gradle" data-url="//lichongjiu.com/2017/06/28/gradle-config/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "//lichongjiu.com/2017/06/28/gradle-config/", 
+    sourceId: "gradle-config",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-    
+  
+  <div id="SOHUCS" sid="gradle-config" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "true"; 
+var conf = "true"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -244,10 +394,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		root: "/",
 		innerArchive: true,
