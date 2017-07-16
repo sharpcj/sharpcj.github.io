@@ -20,7 +20,7 @@
 <meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p2.jpg">
 <meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p4.jpg">
 <meta property="og:image" content="//lichongjiu.com/assets/imgs/gradle_config/p5.jpg">
-<meta property="og:updated_time" content="2017-06-27T16:46:43.654Z">
+<meta property="og:updated_time" content="2017-07-16T04:36:37.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="亲测可行，AndroidStudio 究竟如何配置gradle">
 <meta name="twitter:description" content="一、你不想看到的 Gradle Build Running话说在天朝当程序员也是很不容易的，不管是查阅资料还是下载东西，很多时候你会发现自己上网姿势不对，当然对大多数程序员来说，这都不是事儿。这次重新安装了最新版的AndrodiStudio,按照国际惯例，第一次启动当然是按默认程序走一波 Hello World。可是，很有可能，你会看到你不想看到的如下界面：原因估计大家应该都知道，是你项目对应版本">
@@ -181,7 +181,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="一、你不想看到的-Gradle-Build-Running"><a href="#一、你不想看到的-Gradle-Build-Running" class="headerlink" title="一、你不想看到的 Gradle Build Running"></a>一、你不想看到的 Gradle Build Running</h1><p>话说在天朝当程序员也是很不容易的，不管是查阅资料还是下载东西，很多时候你会发现自己上网姿势不对，当然对大多数程序员来说，这都不是事儿。这次重新安装了最新版的AndrodiStudio,按照国际惯例，第一次启动当然是按默认程序走一波 Hello World。可是，很有可能，你会看到你不想看到的如下界面：<br><img src="/assets/imgs/gradle_config/p1.jpg" alt=""><br>原因估计大家应该都知道，是你项目对应版本的 gradle 下载不下来造成的。在不改变上网环境的情况下，解决办法就是下载 gradle 到本地，然后做相应配置。下面主要说说怎么配置。</p>
-<h1 id="二、亲测可行的解决方案"><a href="#二、亲测可行的解决方案" class="headerlink" title="二、亲测可行的解决方案"></a>二、亲测可行的解决方案</h1><h3 id="2-1解决问题"><a href="#2-1解决问题" class="headerlink" title="2.1解决问题"></a>2.1解决问题</h3><p>打开项目中的 gradle-wrapper.properties 文件，如下：<br><img src="/assets/imgs/gradle_config/p3.jpg" alt=""><br>意思就是在 <code>GRADLE_USER_HOME/wrapper/dists/</code>下面去找对应的 gradle 文件，没有的话，就去<br>到最后一行<br><code>distributionUrl=https\://services.gradle.org/distributions/gradle-3.4.1-all.zip</code><br>中的地址下载，其中 gradle-3.4.1-all.zip 这个说明你当前工程配置的 gradle 的版本为 3.4.1。所以需要下载该版本的gradle，<br>你可以到这里下载：<br><a href="http://services.gradle.org/distributions/" target="_blank" rel="external">http://services.gradle.org/distributions/</a><br>网上有热心人士的共享：<br><a href="http://download.csdn.net/album/detail/2265" target="_blank" rel="external">gradle-x.x-all.zip各个版本的离线包集合</a><br>接下来打开 AndroidStudio 中 gradle 的设置界面，如下：<br><img src="/assets/imgs/gradle_config/p2.jpg" alt=""><br>可以看到，默认的 gradle 的目录是<code>C:/Users/SharpCJ/.gradle</code>，进入该目录<br><code>C:\Users\SharpCJ\.gradle\wrapper\dists\gradle-x.x-all\</code>，可以看到有一串看起来像乱码字符的文件夹，进入，删掉里面的 gradle-x.x-all.zip.lck 和 gradle-x.x-all.zip.part 文件，然后把前面下载下来的对应的 gradle-x.x-all.zip 文件放进去，<strong>不用解压</strong>,然后 Ctrl+F9,重新编译工程，则会自动解压。OK,问题解决了。</p>
+<h1 id="二、亲测可行的解决方案"><a href="#二、亲测可行的解决方案" class="headerlink" title="二、亲测可行的解决方案"></a>二、亲测可行的解决方案</h1><h3 id="2-1解决问题"><a href="#2-1解决问题" class="headerlink" title="2.1解决问题"></a>2.1解决问题</h3><p>打开项目中的 gradle-wrapper.properties 文件，如下：<br><img src="/assets/imgs/gradle_config/p3.jpg" alt=""><br>意思就是在 <code>GRADLE_USER_HOME/wrapper/dists/</code>下面去找对应的 gradle 文件，没有的话，就去<br>到最后一行<br><code>distributionUrl=https\://services.gradle.org/distributions/gradle-3.4.1-all.zip</code><br>中的地址下载，其中 gradle-3.4.1-all.zip 这个说明你当前工程配置的 gradle 的版本为 3.4.1。所以需要下载该版本的gradle，</p>
+<a id="more"></a>
+<p>你可以到这里下载：<br><a href="http://services.gradle.org/distributions/" target="_blank" rel="external">http://services.gradle.org/distributions/</a><br>网上有热心人士的共享：<br><a href="http://download.csdn.net/album/detail/2265" target="_blank" rel="external">gradle-x.x-all.zip各个版本的离线包集合</a><br>接下来打开 AndroidStudio 中 gradle 的设置界面，如下：<br><img src="/assets/imgs/gradle_config/p2.jpg" alt=""><br>可以看到，默认的 gradle 的目录是<code>C:/Users/SharpCJ/.gradle</code>，进入该目录<br><code>C:\Users\SharpCJ\.gradle\wrapper\dists\gradle-x.x-all\</code>，可以看到有一串看起来像乱码字符的文件夹，进入，删掉里面的 gradle-x.x-all.zip.lck 和 gradle-x.x-all.zip.part 文件，然后把前面下载下来的对应的 gradle-x.x-all.zip 文件放进去，<strong>不用解压</strong>,然后 Ctrl+F9,重新编译工程，则会自动解压。OK,问题解决了。</p>
 <h3 id="2-2-更改-gradle-版本"><a href="#2-2-更改-gradle-版本" class="headerlink" title="2.2 更改 gradle 版本"></a>2.2 更改 gradle 版本</h3><p>假设现在要自己改变 gradle 版本，同样的道理，改 gradle-wrapper.properties 文件中最后一行版本号，然后编译则会生成对应的乱码字符的文件夹，然后按上面的操作进行，<strong>注意不能手动新建文件夹</strong>。<br>但是有时候，你会发现，编译的时候仍然会报错，这时候，很有可能是你选择的 gradle 版本太低了。gradle的版本还需要和 gradle 插件的版本对应，提高 gradle 版本即可。        </p>
 <h1 id="三、gradle-和-gradle-插件的区别"><a href="#三、gradle-和-gradle-插件的区别" class="headerlink" title="三、gradle 和 gradle 插件的区别"></a>三、gradle 和 gradle 插件的区别</h1><p>我们知道，AndroidStudio 是基于 gradle 构建项目的，安装 gradle插件 才能使系统能支持运行 gradle。安装 AndroidStudio 后就已经帮我安装了 gradle插件．但 gradle插件是独立于Android Studio运行的,所以它的更新也是与 AndroidStudio 分开的。<br>打开工程的 build.gradle 文件，能看到如下界面：<br><img src="/assets/imgs/gradle_config/p4.jpg" alt=""><br>这个就是 gradle插件的版本号。下图展示了 gradle插件 和 gradle 之间的对应关系：<br><img src="/assets/imgs/gradle_config/p5.jpg" alt=""><br>因为 gradle 在不断更新，自然 gradle插件也需要不断更新版本才能提供对新版本gradle的支持，所以最好让你的Gradle和Gradle插件都更新到最新。<br>更新 gradle 插件的方法：<br>通过选择 File &gt; Project Structure &gt; Project 来指定Gradle版本，然后点击 Tools &gt; Android &gt; Sync Project with Gradle Files 去下载。</p>
 
@@ -312,6 +314,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/07/15/my_python_1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python 学习
+        
+      </div>
+    </a>
   
   
     <a href="/2017/06/18/my-first-father's-day/" id="article-nav-older" class="article-nav-link-wrap">
@@ -463,11 +474,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">app</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -479,23 +490,27 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">日记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">app</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
               </li>
              
               <li class="article-tag-list-item">
