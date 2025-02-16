@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android 侧滑菜单栏"
+title: "CoordinatorLayout的简单应用（材料设计新控件）"
 date:  2016-07-11 17:58:12 +0800
 categories: ["技术", "编程", "Android"]
 tag: ["Android"]
@@ -8,7 +8,7 @@ tag: ["Android"]
 
 CoordinatorLayout字面意思为：协调布局，一般作为根布局使用。关于这个布局，记录一下两个用法，备忘。
 
-# 一、配合 `FloatingActionBar` 使用
+# 一、配合 FloatingActionBar 使用
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,7 +32,9 @@ CoordinatorLayout字面意思为：协调布局，一般作为根布局使用。
 ```
 
 以上布局文件样式如下：
+
 ![](/assets/images/技术/编程/Android/CoordinatorLayout的简单应用/pic1.png)
+
 点击测试 Button 按钮，弹出一个 SnackBar ,代码如下：
 
 ```
@@ -48,6 +50,7 @@ public void clickTest(View view){
 ```
 
 测试效果如下：
+
 ![](/assets/images/技术/编程/Android/CoordinatorLayout的简单应用/pic2.gif)
 
 注意，只有 FloatingActionBar 才有这种效果。
@@ -142,9 +145,11 @@ public class SecondActivity extends AppCompatActivity {
 ```
 
 测试效果如下：
+
 ![](/assets/images/技术/编程/Android/CoordinatorLayout的简单应用/pic3.gif)
 
 注意：如果将布局文件中 ToolBar 的属性改为 `app:layout_scrollFlags="scroll|enterAlwaysCollapsed"`，则效果如下：
+
 ![](/assets/images/技术/编程/Android/CoordinatorLayout的简单应用/pic4.gif)
 
 即：ToolBar 的属性设置为 `app:layout_scrollFlags="scroll|enterAlways"` 时，只要下拉 RecyclerView ，ToolBar 就会显示出来
@@ -161,7 +166,9 @@ public class SecondActivity extends AppCompatActivity {
 
 # 三、类似QQ空间动态页面顶部图片折叠效果
 先上效果图
+
 ![](/assets/images/技术/编程/Android/CoordinatorLayout的简单应用/pic5.gif)
+
 将上个布局文件中 ToolBar 用 CollapsingToolbarLayout 套起来，注意其中的几个属性，记住即可。布局文件如下：
 
 ```
