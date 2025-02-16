@@ -6,7 +6,7 @@ categories: ["技术", "编程", "C#"]
 tag: ["C#", "面向对象"]
 ---
 
-注：本文转载自 [http://www.cnblogs.com/michaelxu/archive/2008/04/01/1132633.html](http://www.cnblogs.com/michaelxu/archive/2008/04/01/1132633.html)
+注：本文转载自 [https://www.cnblogs.com/michaelxu/archive/2008/04/01/1132633.html](https://www.cnblogs.com/michaelxu/archive/2008/04/01/1132633.html)
 
 虚方法和抽象方法都可以供派生类重写，它们之间有什么区别呢？
 
