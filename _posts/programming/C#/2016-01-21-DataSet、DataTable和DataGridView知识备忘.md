@@ -2,8 +2,8 @@
 layout: post
 title: "DataSet、DataTable和DataGridView知识备忘"
 date:  2016-01-21 16:45:15 +0800
-categories: [技术, 编程语言, C#]
-tag: [C#, Excel]
+categories: ["技术", "编程语言", "C#"]
+tag: ["C#", "Excel"]
 ---
 datatable中，获取第i行j列的单元格内容：
 ```
