@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "用 Hexo + Github 搭建自己的博客"
-date:  2016-06-11 15:36:07 +0800
+date:  2017-06-11 15:36:07 +0800
 categories: ["技术", "其它"]
 tag: ["Hexo", "博客"]
 ---
