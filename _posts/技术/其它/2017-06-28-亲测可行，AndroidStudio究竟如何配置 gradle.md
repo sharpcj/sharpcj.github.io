@@ -24,10 +24,10 @@ tag: ["Hexo", "Android Studio"]
 `distributionUrl=https\://services.gradle.org/distributions/gradle-3.4.1-all.zip`
 中的地址下载，其中 gradle-3.4.1-all.zip 这个说明你当前工程配置的 gradle 的版本为 3.4.1。所以需要下载该版本的gradle，
 你可以到这里下载：
-[http://services.gradle.org/distributions/](http://services.gradle.org/distributions/)
+[http://services.gradle.org/distributions/](https://services.gradle.org/distributions/)
 
 如果访问速度不佳，国内有镜像地址：
-[腾讯云镜像 Gradle下载地址: mirrors.cloud.tencent.com/gradle/](mirrors.cloud.tencent.com/gradle/)
+[腾讯云镜像 Gradle下载地址: mirrors.cloud.tencent.com/gradle/](https://mirrors.cloud.tencent.com/gradle/)
 
 接下来打开 AndroidStudio 中 gradle 的设置界面，如下：
 
