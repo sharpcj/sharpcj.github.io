@@ -2,14 +2,14 @@
 layout: post
 title: "亲测可行，AndroidStudio究竟如何配置 gradle"
 date:  2017-06-28 18:36:07 +0800
-categories: ["技术", "其它"]
-tag: ["Hexo", "Android Studio"]
+categories: ["技术", "编程", "Android"]
+tag: ["Android", "Android Studio"]
 ---
 
 # 一、你不想看到的 Gradle Build Running
 话说在天朝当程序员也是很不容易的，不管是查阅资料还是下载东西，很多时候你会发现自己上网姿势不对，当然对大多数程序员来说，这都不是事儿。这次重新安装了最新版的AndrodiStudio,按照国际惯例，第一次启动当然是按默认程序走一波 Hello World。可是，很有可能，你会看到你不想看到的如下界面：
 
-![](/assets/images/技术/其它/亲测可行，Android%20Studio究竟如何配置gradle/pic1.jpg)
+![](/assets/images/技术/编程/Android/亲测可行，Android%20Studio究竟如何配置gradle/pic1.jpg)
 
 原因估计大家应该都知道，是你项目对应版本的 gradle 下载不下来造成的。在不改变上网环境的情况下，解决办法就是下载 gradle 到本地，然后做相应配置。下面主要说说怎么配置。
 
@@ -17,7 +17,7 @@ tag: ["Hexo", "Android Studio"]
 ## 2.1解决问题
 打开项目中的 gradle-wrapper.properties 文件，如下：
 
-![](/assets/images/技术/其它/亲测可行，Android%20Studio究竟如何配置gradle/pic2.jpg)
+![](/assets/images/技术/编程/Android/亲测可行，Android%20Studio究竟如何配置gradle/pic2.jpg)
 
 意思就是在 `GRADLE_USER_HOME/wrapper/dists/` 下面去找对应的 gradle 文件，没有的话，就去
 到最后一行
@@ -31,7 +31,7 @@ tag: ["Hexo", "Android Studio"]
 
 接下来打开 AndroidStudio 中 gradle 的设置界面，如下：
 
-![](/assets/images/技术/其它/亲测可行，Android%20Studio究竟如何配置gradle/pic3.jpg)
+![](/assets/images/技术/编程/Android/亲测可行，Android%20Studio究竟如何配置gradle/pic3.jpg)
 
 可以看到，默认的 gradle 的目录是 `C:/Users/SharpCJ/.gradle`，进入该目录
 `C:\Users\SharpCJ\.gradle\wrapper\dists\gradle-x.x-all\`，可以看到有一串看起来像乱码字符的文件夹，进入，删掉里面的 gradle-x.x-all.zip.lck 和 gradle-x.x-all.zip.part 文件，然后把前面下载下来的对应的 gradle-x.x-all.zip 文件放进去，不用解压,然后 Ctrl+F9, 重新编译工程，则会自动解压。OK,问题解决了。
@@ -44,7 +44,7 @@ tag: ["Hexo", "Android Studio"]
 我们知道，AndroidStudio 是基于 gradle 构建项目的，安装 gradle插件 才能使系统能支持运行 gradle。安装 AndroidStudio 后就已经帮我安装了 gradle插件．但 gradle插件是独立于Android Studio运行的,所以它的更新也是与 AndroidStudio 分开的。
 打开工程的 build.gradle 文件，能看到如下界面：
 
-![](/assets/images/技术/其它/亲测可行，Android%20Studio究竟如何配置gradle/pic4.jpg)
+![](/assets/images/技术/编程/Android/亲测可行，Android%20Studio究竟如何配置gradle/pic4.jpg)
 
 这个就是 gradle插件的版本号。下图展示了 gradle插件 和 gradle 之间的对应关系：
 

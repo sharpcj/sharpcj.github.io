@@ -2,7 +2,7 @@
 layout: post
 title: "Ubuntu安装genymotion模拟器步骤"
 date:  2017-06-06 15:36:07 +0800
-categories: ["技术", "其它"]
+categories: ["技术", "编程", "Linux和虚拟机"]
 tag: ["genymotion", "模拟器", "虚拟机"]
 ---
 
