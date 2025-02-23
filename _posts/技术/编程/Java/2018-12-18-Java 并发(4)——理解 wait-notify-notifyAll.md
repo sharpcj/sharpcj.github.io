@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java 并发(3)——Lock"
+title: "Java 并发(4)———理解 wait-notify-notifyAll"
 date:  2018-12-18 17:58:12 +0800
 categories: ["技术", "编程", "Java"]
 tag: ["Java", "并发", "wait-notify-notifyAll"]
