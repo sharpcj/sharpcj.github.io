@@ -7,9 +7,9 @@ tag: ["idea"]
 ---
 
 1. 编辑 `C:\Windows\System32\drivers\etc\hosts` 文件，最后面加入下面两行
+
 ```
 0.0.0.0 account.jetbrains.com
-
 0.0.0.0 www.jetbrains.com
 ```
 
