@@ -11,11 +11,11 @@ tag: ["Java", "Spring", "IOC"]
 上篇文章介绍了 Spring IOC 中最重要的两个概念——容器和Bean，以及如何使用 Spring 容器装配Bean。本文接着记录 Spring 中 IOC 的相关知识。
 
 >部分参考资料：
-《Spring实战（第4版）》
-《轻量级 JavaEE 企业应用实战（第四版）》
-[Spring 官方文档](https://docs.spring.io/spring-framework/docs/5.0.6.RELEASE/spring-framework-reference/core.html#spring-core)
-[W3CSchool Spring教程](https://www.w3cschool.cn/wkspring/)
-[易百教程 Spring教程](https://www.yiibai.com/spring/)
+>《Spring实战（第4版）》
+>《轻量级 JavaEE 企业应用实战（第四版）》
+>[Spring 官方文档](https://docs.spring.io/spring-framework/docs/5.0.6.RELEASE/spring-framework-reference/core.html#spring-core)
+>[W3CSchool Spring教程](https://www.w3cschool.cn/wkspring/)
+>[易百教程 Spring教程](https://www.yiibai.com/spring/)
 
 ## 一、Spring 容器中的 Bean 的常用属性
 ### 1.1 Bean的作用域

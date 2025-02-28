@@ -13,11 +13,11 @@ tag: ["Java", "Spring", "IOC"]
 学习新东西总是令人兴奋的，然而大多数学过的知识很容易又会忘记，所以便想整理一下，写点笔记，方便自己以后复习查看。
 
 >部分参考资料：
-《Spring实战（第4版）》
-《轻量级 JavaEE 企业应用实战（第四版）》
-[Spring 官方文档](https://docs.spring.io/spring-framework/docs/5.0.6.RELEASE/spring-framework-reference/core.html#spring-core)
-[W3CSchool Spring教程](https://www.w3cschool.cn/wkspring/)
-[易百教程 Spring教程](https://www.yiibai.com/spring/)
+>《Spring实战（第4版）》
+>《轻量级 JavaEE 企业应用实战（第四版）》
+>[Spring 官方文档](https://docs.spring.io/spring-framework/docs/5.0.6.RELEASE/spring-framework-reference/core.html#spring-core)
+>[W3CSchool Spring教程](https://www.w3cschool.cn/wkspring/)
+>[易百教程 Spring教程](https://www.yiibai.com/spring/)
 
 ## 一、Spring简介
 Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java开发框架，由Rod Johnson在其著作Expert One-On-One J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪一个组件。Spring提供了约20多个组件，开发者可以根据自己需要选择组件。**Spring的核心是控制反转(IoC)和面向切面编程(AOP)**
