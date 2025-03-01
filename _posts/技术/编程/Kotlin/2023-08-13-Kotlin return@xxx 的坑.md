@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kotlin return@xxx 的坑"
-date:  2022-08-13 17:58:12 +0800
+date:  2023-08-13 17:58:12 +0800
 categories: ["技术", "编程", "Kotlin"]
 tag: ["Kotlin"]
 ---
