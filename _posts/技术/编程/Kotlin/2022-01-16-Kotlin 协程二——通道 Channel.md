@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Kotlin 协程二——通道 Channel"
-date:  2022-01-14 17:58:12 +0800
+date:  2022-01-16 17:58:12 +0800
 categories: ["技术", "编程", "Kotlin"]
-tag: ["Kotlin", "lambda 表达式"]
+tag: ["Kotlin", "channel"]
 ---
 
 [toc]
