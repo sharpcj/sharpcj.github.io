@@ -23,7 +23,7 @@ Jetpack Compose 是用于构建原生 Android 界面的新工具包，是一种�
 下面举个实际的例子：
 考虑一个带有未读邮件图标的电子邮件应用程序。如果没有消息，应用程序将呈现一个空白信封。如果有一些消息，我们在信封中渲染一些纸，如果有100条消息，我们将图标渲染为着火的样子。。
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic1.jpg)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic1.jpg)
 
 对于命令式接口，我们可能需要编写这样的更新计数函数:
 
@@ -72,7 +72,7 @@ fun BadgedEnvelope(count: Int) {
 
 这就是声明性API的含义。我们编写的代码描述了我们想要的 UI，但没有描述如何转换到那种状态。这里的关键是，在编写这样的声明性代码时，您不再需要担心UI的上一个状态，只需要指定当前状态。框架控制如何从一个状态转换到另一个状态。因此，我们不再需要考虑它。
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic2.png)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic2.png)
 
 其实，在 Jetpack Compose 之前，Google 推出的 Data Binding 框架也属于声明式编程范式。
 
@@ -116,19 +116,19 @@ Button(
 ### 3.2 Google 确定的 Android 官方推荐的 UI 框架
 如同 Kotlin 取代 Java 成为 Google 推荐的 Android 官方推荐的编程语言一样，Jetpack Compose 也是 Google 推荐的 Android 官方 UI 框架。并且，新版的 Android Studio 中集成了大量的特性来支持 Jetpack Compose 更高效的开发。这表明 Jetpack Compose 在未来的 Android 开发中将扮演重要的角色。目前来看，Jetpack Compose 并不会完全取代传统的 View 视图体系，而是会和传统 View 视图体系共存， 但是 Jetpack Compose 在未来会能成为 Android 开发的主流。从 Android 14 Framework 中我们能看到 Compose 的影子了。在 2018 年，SystemUI 模块中，我们能看到 Kotlin 改写的部分模块，在 Android 14 中，我们再 Settings 中再次看到了 Kotlin 的代码了。并且 Google 新建了一个 spa 包，这个包里面尝试把 “应用管理”、“应用管理通知”、“使用情况” 页面用 Jetpack Compose 重写了。
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic3.jpg)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic3.jpg)
 
 除此之外，还有 3 个主页面也进行了重写，
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic4.png)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic4.png)
 
 出于稳健考虑，Google 没有默认使能这些页面。如果你想提前吃螃蟹，可以使用以下命令来开启： adb shell settings put global settings_enable_spa true 通过搜索代码，也可以轻松找到这个开关在哪里被使用：
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic5.png)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic5.png)
 
 我们可以去到相关页面看一下前后对比：
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic6.png)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic6.png)
 
 由于Jetpack Compose的各个组件一直都在很好地践行Material Design 3，可以看到后者的视觉还原要更好，也不会出现前者那样MenuItem背景颜色不正确的问题。
 
@@ -149,11 +149,11 @@ Compose 重新定义了 Android UI 开发方式，大幅提升了开发效率，
 
 #### 4.1.1 APK 尺寸缩减
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic7.png)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic7.png)
 
 △ 展示 Tivi APK 大小的图表
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic8.png)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic8.png)
 
 △ 展示 Tivi 方法数的图表
 
@@ -167,7 +167,7 @@ Compose 重新定义了 Android UI 开发方式，大幅提升了开发效率，
 cloc . --exclude-dir=build,.idea,schemas
 ```
 
-![](/assets/images/技术/编程/Jetpack%20Compose/pic9.jpg)
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic9.jpg)
 
 △ 展示 Tivi 源代码行数的图表
 
@@ -177,7 +177,10 @@ cloc . --exclude-dir=build,.idea,schemas
 
 #### 4.1.3 构建速度
 
+![](/assets/images/技术/编程/Jetpack%20Compose/compose1/pic10.png)
+
 △ 展示 Tivi 构建时间中位数的图表
+
 考虑到 Kotlin 编译器与 Compose 编译器插件为我们所做的事情，如位置记忆化、细粒度重组等工作，构建时间能够 减少 29%， 可以说十分惊人。
 
 ## 写在最后
