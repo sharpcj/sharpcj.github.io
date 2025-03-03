@@ -3,7 +3,7 @@ layout: post
 title: "LM Studio + open-webui 快速本地部署大语言模型"
 date:  2024-07-22 17:58:12 +0800
 categories: ["技术", "AIGC", "大模型"]
-tag: ["Kotlin", "LLM"]
+tag: ["AIGC", "LLM"]
 image:
   path: /assets/images/技术/AIGC/大模型/LLM/LLM.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
