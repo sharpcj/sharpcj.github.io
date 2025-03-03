@@ -2,7 +2,7 @@
 layout: post
 title: "ComfyUI 基础教程(三) —— 应用 Controlnet 精准控制图像生成"
 date:  2024-09-07 17:58:12 +0800
-categories: ["技术", "AIGC", "comfyui"]
+categories: ["技术", "AIGC", "ComfyUI"]
 tag: ["AIGC", "Stable Diffusion", "comfyui"]
 image:
   path: /assets/images/技术/AIGC/comfyui/comfyui3/default.png

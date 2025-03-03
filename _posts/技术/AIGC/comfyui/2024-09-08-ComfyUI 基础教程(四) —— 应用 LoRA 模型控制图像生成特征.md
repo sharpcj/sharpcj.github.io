@@ -2,7 +2,7 @@
 layout: post
 title: "ComfyUI 基础教程(四) —— 应用 LoRA 模型控制图像生成特征"
 date:  2024-09-08 17:58:12 +0800
-categories: ["技术", "AIGC", "comfyui"]
+categories: ["技术", "AIGC", "ComfyUI"]
 tag: ["AIGC", "Stable Diffusion", "comfyui"]
 image:
   path: /assets/images/技术/AIGC/comfyui/comfyui4/default.png

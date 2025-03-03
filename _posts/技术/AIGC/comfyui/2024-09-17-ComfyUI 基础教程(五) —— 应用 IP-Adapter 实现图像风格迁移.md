@@ -2,7 +2,7 @@
 layout: post
 title: "ComfyUI 基础教程(五) —— 应用 IP-Adapter 实现图像风格迁移"
 date:  2024-09-17 17:58:12 +0800
-categories: ["技术", "AIGC", "comfyui"]
+categories: ["技术", "AIGC", "ComfyUI"]
 tag: ["AIGC", "Stable Diffusion", "comfyui"]
 image:
   path: /assets/images/技术/AIGC/comfyui/comfyui5/pic13.png

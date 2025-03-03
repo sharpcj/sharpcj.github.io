@@ -2,7 +2,7 @@
 layout: post
 title: "ComfyUI 基础教程(二) —— Stable Diffusion 文生图基础工作流及模型、常用节点介绍"
 date:  2024-09-06 17:58:12 +0800
-categories: ["技术", "AIGC", "comfyui"]
+categories: ["技术", "AIGC", "ComfyUI"]
 tag: ["AIGC", "Stable Diffusion", "comfyui"]
 image:
   path: /assets/images/技术/AIGC/comfyui/comfyui2/default.png

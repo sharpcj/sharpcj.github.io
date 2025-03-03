@@ -2,7 +2,7 @@
 layout: post
 title: "Stable Diffusion 小白的入坑铺垫"
 date:  2024-08-31 17:58:12 +0800
-categories: ["技术", "AIGC", "comfyui"]
+categories: ["技术", "AIGC", "ComfyUI"]
 tag: ["AIGC", "Stable Diffusion"]
 image:
   path: /assets/images/技术/AIGC/comfyui/sd 入门/logo.png
