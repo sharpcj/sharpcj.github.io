@@ -129,6 +129,14 @@ comments:
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
+  valine:
+    enabled: true
+    leancloud_appid: h9FN9fqkvXGFP18s2vfkqHZl-gzGzoHsz
+    leancloud_appkey: 6KAVa1a4tzeawwQDjPdyP3Qi
+    placeholder: 说点什么吧~
+    avatar: retro
+    serverURLs: 'https://h9fn9fqk.lc-cn-n1-shared.com'
+
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
