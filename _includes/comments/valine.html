@@ -1,0 +1,10 @@
+<div id="vcomments"></div>
+<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '{{ site.comments.valine.app_id }}',
+    appKey: '{{ site.comments.valine.app_key }}',
+    path: window.location.pathname
+  })
+</script>
