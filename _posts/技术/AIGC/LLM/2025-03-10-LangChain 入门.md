@@ -2,7 +2,7 @@
 layout: post
 title: "LangChain入门学习"
 date:  2025-03-10 22:58:12 +0800
-categories: ["技术", "AIGC", "LangChain"]
+categories: ["技术", "LLM", "LangChain"]
 tag: ["AIGC", "LangChain"]
 ---
 
