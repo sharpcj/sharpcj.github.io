@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LangChain学习(1)——新手入门"
+title: "LangChain入门学习"
 date:  2025-03-10 22:58:12 +0800
 categories: ["技术", "AIGC", "LangChain"]
 tag: ["AIGC", "LangChain"]
@@ -160,7 +160,7 @@ def test_openai():
 
 ### 3.3 ChatOpenAI 和 ChatOllama
 上面的例子中使用了 ChatOpenAI 创建大模型实例，来自于 `from langchain_openai import ChatOpenAI` 这个包。
-另外还有使用 OpenAI 创建大模型实例的，输入是字符串，输出也是字符串。
+另外还有使用 OpenAI 创建大模型实例的，输入是字符串，输出也是字符串。两者的区别，后面一片文章再说。
 
 由于我是本地部署的大模型，在 `from langchain_ollama import ChatOllama` 这个包中还有一个 `ChatOllama` 可以用来创建大模型对象。它与 ChatOpenAI 的区别：
 1. ChatOpenAI 需要有一个参数 `openai_api_key`, 本地模型可以随便传一个，但是必须传一个占位。ChatOllama 没有这个参数。
