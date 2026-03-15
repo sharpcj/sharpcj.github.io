@@ -4,6 +4,11 @@ title: "Ubuntu 下 conda 设置"
 date:  2025-03-23 09:50:07 +0800
 categories: ["技术", "编程", "Linux和虚拟机"]
 tag: ["Ubuntu", "conda"]
+image:
+  path: /assets/images/技术/编程/Linux和虚拟机/Ubuntu下安装Conda/conda.png
+  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+  alt: title
+---
 ---
 
 # 禁止自动进入 base 环境
