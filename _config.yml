@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: SharpCJ # the main title
 
-tagline: 躺平的生活毫无意义，折腾才是经历。 # it will display as the subtitle
+tagline: 躺平的生活毫无意义，折腾的过程才是最宝贵的经验。 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
