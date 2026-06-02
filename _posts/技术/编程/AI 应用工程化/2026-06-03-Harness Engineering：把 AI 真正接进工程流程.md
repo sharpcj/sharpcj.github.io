@@ -4,6 +4,7 @@ title: "Harness Engineering：把 AI 真正接进工程流程"
 date:  2026-06-03 00:28:25 +0800
 categories: ["技术", "编程", "AI应用工程化"]
 tag: ["AI Agent", "Harness Engineering", "软件工程"]
+mermaid: true
 image:
   path: /assets/images/技术/编程/AI 应用工程化/Harness Engineering Flow/cover.png
   alt: Harness Engineering 封面
