@@ -4,6 +4,7 @@ title: "Android 开发者为什么必须掌握 AI 能力？端侧视角下的技
 date:  2026-04-05 20:58:12 +0800
 categories: ["技术", "编程", "AI应用工程化"]
 tag: ["Android", "端侧AI", "Android开发"]
+mermaid: true
 image:
   path: /assets/images/技术/编程/AI 应用工程化/AI下的Android/android_ai.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
